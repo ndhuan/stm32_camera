@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\hoc hanh\electronic\stm32\optical_flow_keil4\optical_flow.uvproj
+Project File Date:  04/24/2016
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+User\main.c(5): warning:  #550-D: variable "ax" was set but never used
+  static int16_t ax, ay, az, wx, wy, wz;
+User\main.c(5): warning:  #550-D: variable "ay" was set but never used
+  static int16_t ax, ay, az, wx, wy, wz;
+User\main.c(5): warning:  #550-D: variable "az" was set but never used
+  static int16_t ax, ay, az, wx, wy, wz;
+User\main.c(5): warning:  #550-D: variable "wx" was set but never used
+  static int16_t ax, ay, az, wx, wy, wz;
+User\main.c(5): warning:  #550-D: variable "wy" was set but never used
+  static int16_t ax, ay, az, wx, wy, wz;
+User\main.c(5): warning:  #550-D: variable "wz" was set but never used
+  static int16_t ax, ay, az, wx, wy, wz;
+User\main.c: 6 warnings, 0 errors
+compiling i2c.c...
+User\i2c.c(92): warning:  #550-D: variable "res" was set but never used
+        bool res;
+User\i2c.c: 1 warning, 0 errors
+linking...
+Program Size: Code=9060 RO-data=444 RW-data=4188 ZI-data=5748  
+".\Output\optical_flow.axf" - 0 Error(s), 7 Warning(s).
+Load "D:\\hoc hanh\\electronic\\stm32\\optical_flow_keil4\\Output\\optical_flow.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+.
+User\i2c.c(92): warning:  #550-D: variable "res" was set but never used
+        bool res;
+User\i2c.c: 1 warning, 0 errors
+compiling usart.c...
+compiling led.c...
+linking...
+Program Size: Code=9060 RO-data=444 RW-data=4188 ZI-data=5748  
+".\Output\optical_flow.axf" - 0 Error(s), 7 Warning(s).
+ow.axf: Error: L6218E: Undefined symbol USART_GetITStatus (referred from usart.o).
+.\Output\optical_flow.axf: Error: L6218E: Undefined symbol USART_ITConfig (referred from usart.o).
+.\Output\optical_flow.axf: Error: L6218E: Undefined symbol USART_Init (referred from usart.o).
+.\Output\optical_flow.axf: Error: L6218E: Undefined symbol USART_ReceiveData (referred from usart.o).
+.\Output\optical_flow.axf: Error: L6218E: Undefined symbol USART_SendData (referred from usart.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 6 error messages.
+".\Output\optical_flow.axf" - 6 Error(s), 7 Warning(s).
+Target not created
+   deleting intermediate output files for target 'Target 1'
+Clean started: Project: 'optical_flow'
+   deleting intermediate output files for target 'Target 1'
+identifier "false" is undefined
+                if((time--) == 0) return false;
+User\i2c.c(287): error:  #20: identifier "false" is undefined
+          if (time-- == 0) return false;
+User\i2c.c(302): error:  #20: identifier "false" is undefined
+              if ((time--) == 0) return false;
+User\i2c.c(310): error:  #20: identifier "true" is undefined
+      return true;
+User\i2c.c: 1 warning, 16 errors
+compiling usart.c...
+User\usart.c(42): error:  #5: cannot open source input file "settings.h": No such file or directory
+  #include "settings.h"
+User\usart.c: 0 warnings, 1 error
+".\Output\optical_flow.axf" - 21 Error(s), 1 Warning(s).
+Target not created
